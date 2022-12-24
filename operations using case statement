@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "Enter the first number"
+read a
+echo "Enter the second number"
+read b
+echo "Enter the opertor:"
+echo -e "Addition: +\nSubtraction: -\nMultiplication: X\nDivision: /"
+read op
+case $op in
++) c=$((a+b))
+echo "Sum of $a and $b is $c";;
+-) c=$((a−b))
+echo "Difference of $a and $b is $c";;
+x) c=$((a*b))
+esac
+echo "production is $c";;
+/) c=$((a/b))
+echo "Division is $c";;
+*) echo "Invalid Operator"
+exit;;
